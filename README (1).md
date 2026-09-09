@@ -9,9 +9,6 @@ infrastructure skills.
 > section for the on-demand design, or check the screenshots/recording below for
 > proof of a working deployment.
 
-## Live demo
-[Add your ALB DNS name here if currently running, or a link to a screen recording]
-
 ## Architecture
 
 ```
