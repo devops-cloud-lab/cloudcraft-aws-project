@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudCraft | DevOps Portfolio Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">CloudCraft</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Deploy anything. Anywhere. Reliably.</h1>
+    <p>A small SaaS-style demo app running on AWS EC2, ALB, Auto Scaling, and RDS.</p>
+    <a href="#contact" class="btn">Get in touch</a>
+    <p class="visits">Visitors served: <span id="visit-count">--</span></p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About this project</h2>
+    <p>This site is served from EC2 instances behind an Application Load Balancer,
+       auto-scaled based on demand, with data stored in Amazon RDS and static assets in S3.</p>
+  </section>
+
+  <section id="services" class="section alt">
+    <h2>What it demonstrates</h2>
+    <div class="cards">
+      <div class="card"><h3>High availability</h3><p>Multi-AZ EC2 instances behind an ALB.</p></div>
+      <div class="card"><h3>Auto scaling</h3><p>Scales from 1 to 3 instances based on CPU load.</p></div>
+      <div class="card"><h3>Managed database</h3><p>Contact form data persisted in RDS PostgreSQL.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your name" required />
+      <input type="email" id="email" placeholder="Your email" required />
+      <textarea id="message" placeholder="Your message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <p id="form-status"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 CloudCraft. Built on AWS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
